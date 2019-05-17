@@ -44,3 +44,48 @@ members = [
   "runtime-raw",
   "runtime-tokio",
 ]
+
+[[example]]
+name = "guessing"
+path = "examples/guessing.rs"
+required-features = ["native"]
+
+[[example]]
+name = "hello"
+path = "examples/hello.rs"
+required-features = ["native"]
+
+[[example]]
+name = "tcp-client"
+path = "examples/tcp-client.rs"
+required-features = ["native"]
+
+[[example]]
+name = "tcp-echo"
+path = "examples/tcp-echo.rs"
+required-features = ["native"]
+
+[[example]]
+name = "tcp-proxy"
+path = "examples/tcp-proxy.rs"
+required-features = ["native"]
+
+[[example]]
+name = "udp-client"
+path = "examples/udp-client.rs"
+required-features = ["native"]
+
+[[example]]
+name = "udp-echo"
+path = "examples/udp-echo.rs"
+required-features = ["native"]
+
+[[test]]
+name = "native"
+path = "tests/native.rs"
+required-features = ["native"]
+
+[[bench]]
+name = "native"
+path = "benches/native.rs"
+required-features = ["native"]
