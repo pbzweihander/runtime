@@ -11,7 +11,8 @@ use futures::task::{Context, Poll};
 ///
 /// # Examples
 ///
-/// ```
+#[cfg_attr(feature = "native", doc = "```")]
+#[cfg_attr(not(feature = "native"), doc = "```ignore")]
 /// #![feature(async_await)]
 ///
 /// #[runtime::main]

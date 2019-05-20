@@ -15,7 +15,8 @@
 //!
 //! ## Examples
 //! __UDP Echo Server__
-//! ```no_run
+#![cfg_attr(feature = "native", doc = "```no_run")]
+#![cfg_attr(not(feature = "native"), doc = "```ignore")]
 //! #![feature(async_await)]
 //!
 //! use runtime::net::UdpSocket;
@@ -110,5 +111,6 @@ pub use runtime_attributes::main;
 #[doc(hidden)]
 pub use runtime_raw as raw;
 
+#[cfg(feature = "native")]
 #[doc(hidden)]
 pub use runtime_native as native;

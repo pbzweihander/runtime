@@ -45,7 +45,8 @@ use futures::task::{Context, Poll};
 /// [`shutdown`]: struct.TcpStream.html#method.shutdown
 ///
 /// ## Examples
-/// ```no_run
+#[cfg_attr(feature = "native", doc = "```no_run")]
+#[cfg_attr(not(feature = "native"), doc = "```ignore")]
 /// #![feature(async_await)]
 ///
 /// use futures::prelude::*;
@@ -104,7 +105,8 @@ impl TcpStream {
     /// Returns the local address that this stream is connected to.
     ///
     /// ## Examples
-    /// ```no_run
+    #[cfg_attr(feature = "native", doc = "```no_run")]
+    #[cfg_attr(not(feature = "native"), doc = "```ignore")]
     /// #![feature(async_await)]
     /// use runtime::net::TcpStream;
     /// use std::net::{IpAddr, Ipv4Addr};
@@ -150,7 +152,8 @@ impl TcpStream {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    #[cfg_attr(feature = "native", doc = "```no_run")]
+    #[cfg_attr(not(feature = "native"), doc = "```ignore")]
     /// #![feature(async_await)]
     ///
     /// use std::net::Shutdown;
@@ -366,7 +369,8 @@ impl TcpListener {
     ///
     /// # Examples
     ///
-    /// ```no_run
+    #[cfg_attr(feature = "native", doc = "```no_run")]
+    #[cfg_attr(not(feature = "native"), doc = "```ignore")]
     /// #![feature(async_await)]
     ///
     /// use runtime::net::TcpListener;

@@ -35,7 +35,8 @@ use std::task::{Context, Poll};
 /// [IETF RFC 768]: https://tools.ietf.org/html/rfc768
 ///
 /// ## Examples
-/// ```no_run
+#[cfg_attr(feature = "native", doc = "```no_run")]
+#[cfg_attr(not(feature = "native"), doc = "```ignore")]
 /// #![feature(async_await)]
 ///
 /// use runtime::net::UdpSocket;
@@ -288,7 +289,9 @@ impl UdpSocket {
     ///
     /// # Examples
     ///
-    /// ```rust,no_run
+    ///
+    #[cfg_attr(feature = "native", doc = "```rust,no_run")]
+    #[cfg_attr(not(feature = "native"), doc = "```rust,ignore")]
     /// #![feature(async_await)]
     ///
     /// use runtime::net::UdpSocket;
@@ -315,7 +318,8 @@ impl UdpSocket {
     ///
     /// # Examples
     ///
-    /// ```rust,no_run
+    #[cfg_attr(feature = "native", doc = "```rust,no_run")]
+    #[cfg_attr(not(feature = "native"), doc = "```rust,ignore")]
     /// #![feature(async_await)]
     ///
     /// use runtime::net::UdpSocket;
